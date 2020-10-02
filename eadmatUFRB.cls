@@ -1,3 +1,35 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% eadmatUFRB.cls 																													 %%
+%% Copyright 2020 Ícaro Vidal Freire																				 %%
+%%---------------------------------------------------------------------------%%
+%% 				            Este trabalho está licenciado com a                    %%
+%%        Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)					 %%
+%%---------------------------------------------------------------------------%%
+%% Você é livre para  =======================================================%%
+%%	* Compartilhar. Copie e redistribua o material em qualquer               %%
+%%                  meio ou formato															             %%
+%%	* Adaptar. Remixe, transforme e desenvolva o material.									 %%
+%% Sob os seguintes termos ==================================================%%
+%%  * Atribuição. Você deve dar o crédito apropriado , fornecer um link para %%
+%%                a licença e indicar se foram feitas alterações . Você pode %%
+%%                fazê-lo de qualquer maneira razoável, mas não de maneira   %%
+%%                que	sugira que o licenciante endossa você ou seu uso.			 %%
+%%	* Não Comercial. Você não pode usar o material para fins comerciais.		 %%
+%%---------------------------------------------------------------------------%%
+%%										Para o texto completo da licença veja:								 %%
+%%					https://creativecommons.org/licenses/by-nc/4.0/legalcode				 %%
+%%---------------------------------------------------------------------------%%
+%% Essa classe consiste no arquivo 'eadmatUFRB.cls' que é derivado da classe %%
+%% 'exam.cls'. Diz respeito a uma classe para confecção de atividades        %%
+%% avaliativas, extra-oficial, da UFRB,com cabeçalho estilizado, para o      %%
+%% curso de Licenciatura em Matemática do CFP no período da Pandemia da      %%
+%% COVID-19.                                																 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 %==============================================================================
 % Identificações Internas
 %==============================================================================
@@ -172,4 +204,23 @@
 \firstpagefooter{}{\thepage}{}
 \runningfooter{}{\thepage}{}
 %______________________________________________________________________________
+%==============================================================================
+
+%==============================================================================
+% Histórico da Classe
+%------------------------------------------------------------------------------
+% 2020-10-02 ---> * Passei a usar `fontspec` e `poliglossia`;
+%                 * Tenho preferido usar LuaLaTeX, mas está em conflito com o
+%                   pacote `systeme` (para sistemas lineares). Com XeLaTeX 
+%                   funciona normalmente. Ainda não descobri a razão;
+%                 * Não consegui usar a variante \ECFIntimacy do pacote 
+%                   `emerald`. Preciso conhecer mais o `fontspec`.
+%
+%
+%
+%
+%
+%
+%
+%
 %==============================================================================
