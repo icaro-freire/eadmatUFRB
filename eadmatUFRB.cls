@@ -44,13 +44,19 @@
 %==============================================================================
 % Pacotes da Classe
 %==============================================================================
+\RequirePackage{emerald}
 \RequirePackage{gfsartemisia-euler}
+\RequirePackage[T1]{fontenc}
 %\RequirePackage{emerald} % Implementar com fontspec
-\RequirePackage{fontspec}
-   \setmainfont{GFS Artemisia}
+%\RequirePackage{fontspec}
+%   \setmainfont{GFS Artemisia}
 	% \newfontfamily\ECFIntimacy{emerald}
-\RequirePackage{polyglossia}
-   \setdefaultlanguage[variant = brazilian]{portuguese}
+%\RequirePackage{polyglossia}
+%   \setdefaultlanguage[variant = brazilian]{portuguese}
+\RequirePackage{iftex}
+  \ifPDFTeX
+   \PackageError{\jobname}{Precisa de XeLaTeX}{Use XeLaTeX}
+  \fi
 \RequirePackage{lipsum}
 \RequirePackage{graphicx}
 	 \graphicspath{{./figs/}}
@@ -62,7 +68,7 @@
 \RequirePackage[explicit]{titlesec}
 \RequirePackage{amsmath, amsthm, amsfonts, amssymb, amscd}
 \RequirePackage{mathtools}
-%\RequirePackage{systeme} % Caso use, compilar apenas com XeLaTeX (conflito com LuaTeX)
+\RequirePackage{systeme} % Conflito com LuaLaTeX
 \RequirePackage{esint}
 \RequirePackage{array}
    \setcounter{MaxMatrixCols}{20}
@@ -138,25 +144,18 @@
 		}
 	\end{minipage}
 	\par
-	\vspace{0.2cm}
-
+	
 	\begin{center}
 		\begin{minipage}{\textwidth}%
 			\centering
-				\rule[0.8ex]{7.5cm}{0.8pt}\\
-				  \LARGE
-					{
-					 \bfseries
-					  {
-						  Atividade Avaliativa \@NumeroDaLista % Lembrar de modificar
-						}
-					}\\
-				\rule[0.2cm]{7.5cm}{2pt}\\
-				\vspace{-0.85cm}
-				\rule{7.5cm}{0.8pt}\\
-				\vspace{0.2cm} 
+				\rule[2ex]{7cm}{0.8pt}\\
+				 {\LARGE \ECFIntimacy Atividade Avaliativa \@NumeroDaLista}\\
+				\rule{7cm}{2pt}\\
+				\vspace{-0.35cm}
+				\rule{7cm}{0.8pt}
 		\end{minipage}
 	\end{center}
+	\par
 }
 %==============================================================================
 
@@ -216,10 +215,12 @@
 %                 * Não consegui usar a variante \ECFIntimacy do pacote 
 %                   `emerald`. Preciso conhecer mais o `fontspec`.
 %
-%
-%
-%
-%
+% 2020-10-02 ---> * Retirei o pacote `fontspec`;
+%                 * Retirei o pacote `poliglossia`;
+%                 * Voltei a compilar com XeLaTeX;
+%                 * Com tudo isso não houve conflito com pacotes e está sem 
+%                   erros;
+%                 * Usei o pacote `iftex` para reconhecer apenas o XeLaTeX.
 %
 %
 %
