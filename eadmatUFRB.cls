@@ -120,7 +120,7 @@
 		\begin{minipage}{0.74\linewidth}%
 			\ovalbox{%
 				\begin{minipage}{0.99\linewidth}%
-					$\blacktriangleright$\hspace{\stretch{1}}\textbf{\large{\@TituloDaLista}}\hspace{\stretch{1}$\blacktriangleleft$}
+					$\blacktriangleright$\hspace{\stretch{1}}\textbf{\large{\@TituloDaLista}}\hspace{\stretch{1}}$\blacktriangleleft$
 				\end{minipage}
 			}\\
 			\par\vspace{-0.1cm}
