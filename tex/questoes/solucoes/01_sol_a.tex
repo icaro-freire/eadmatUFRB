@@ -1,0 +1,39 @@
+\begin{solution}
+  Usaremos indução sobre $n$.
+		É natural pensarmos: existe algum natural que essa igualdade seja 
+		verdadeira?
+		Bom\ldots não é difícil perceber que para $n=1$ ela é verdadeira.
+		Para $n=2$ também é verdadeira\ldots
+		Então, passamos a pensar: ``Talvez só existe algum subconjunto de 
+		$ \mathbb{N} $ onde ela vale, mas não deve valer para todos os naturais''.
+	 Seja, então, $ \mathcal{X} \subset \mathbb{N} $ definido por
+	 \[
+	  \mathcal{X} = 
+		 \left\{\,
+		 n \in \mathbb{N};\;\; \left| z^{n}(t) \right| = \left| z(t) \right|^{n}
+		 \,\right\}
+	 \]
+	 ou seja, um subconjunto de número naturais onde se verifica a igualdade.
+	 \begin{enumerate}
+	  \item[(i)] $ 1 \in \mathcal{X} $; pois 
+		  $
+			  \left| z^{1}(t) \right| = 
+			  \left| z(t) \right| =
+			  \left| z(t) \right|^{1}
+	 		$.
+		 \item[(ii)] Além disso, se certo natural $ k \in \mathcal{X} $, então 
+		  \[
+			  \left| z^{k + 1}(t) \right| = 
+		 	 \left| z^{k}(t) \cdot z(t) \right| =
+				 \left| z^{k}(t) \right| \cdot \left| z(t) \right| = 
+				 \left| z(t) \right|^{k} \cdot \left| z(t) \right| =
+				 \left| z(t) \right|^{k + 1}
+				\]
+		  ou seja, ${k+1}\in\mathcal{X}$
+	 \end{enumerate}
+	 Ora, se o natural $ 1 $ está em $ \mathcal{X} $ e se para cada natural 
+		$ k $ em $ \mathcal{X} $ o seu sucessor também está\ldots pelo Axioma~4
+		de Peano, tem-se $ \mathcal{X} = \mathbb{N} $. Isso significa que a 
+		igualdade não apenas é válida para uma parte dos naturais, mas para todo
+		natural $ n $.
+\end{solution}
