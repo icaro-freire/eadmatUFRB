@@ -20,3 +20,4 @@
 
 :warning: **Atenção!**
  - Deve ser compilado com XeLaTeX.
+ - Escreva suas soluções na pasta `/tex/questoes`, mas faça a compilação no arquivo `modelo_eadmatUFRB.tex`
