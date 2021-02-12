@@ -1,6 +1,6 @@
 <p align="center">
   <img
-      width = "250px"
+      width = "200px"
       align = "center"
       src   = "/figs/logo_eadmatUFRB.png"
       alt   = "Classe eadmatUFRB" 
