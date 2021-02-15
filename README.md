@@ -9,7 +9,7 @@
       eadmatUFRB.cls
   </h2>
   <p align = "center">
-      <a align = "center" href = "https://nbviewer.jupyter.org/github/icaro-freire/eadmatUFRB/blob/main/modelo_eadmatUFRB.pdf">
+      <a align = "center" href = "https://icaro-freire.github.io/eadmatUFRB/modelo_eadmatUFRB.pdf">
           :link: Veja aqui o resultado final em pdf 
       </a>
   </p>
